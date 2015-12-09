@@ -5,9 +5,9 @@ Paatu Dabba(பாட்டு டப்பா ) is Tamil for 'Song Box'. It aim
 
 The application has three parts:
 
-1) Podu (போடு, Tamil for 'Put') - upload your favourite audio files.
-2) Paadu (பாடு, Tamil for 'Sing') - play your favourite audios.
-3) Sudu (சுடு, Tamil slang for 'Steal') - download your favourite audios.
+1. Podu (போடு, Tamil for 'Put') - upload your favourite audio files.
+2. Paadu (பாடு, Tamil for 'Sing') - play your favourite audios.
+3. Sudu (சுடு, Tamil slang for 'Steal') - download your favourite audios.
 
 #### Requirements
 
@@ -24,15 +24,15 @@ The application has three parts:
 
 #### Screenshots
 
-# Home Page
+###### Home Page
 
 ![Home Page](screenshots/index.png)
 
-# Podu/Upload
+###### Podu/Upload
 
 ![Podu](screenshots/upload.png)
 
-# Paadu/Play
+###### Paadu/Play
 
 ![Paadu](screenshots/playing.png)
 
