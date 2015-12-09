@@ -36,3 +36,22 @@ a: active{
 	color: white;
 	text-decoration: none;
 }
+
+form {
+	font-size: 12px;
+}
+
+input[type=file] {
+    display: initial;
+}
+
+input[type="submit"] {
+    border: 1px white solid;
+    background: transparent;
+}
+
+input[type="submit"]:hover {
+    border: 1px white solid;
+    background: transparent;
+    opacity: 0.5;
+}

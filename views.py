@@ -46,13 +46,7 @@ def upload_file():
 				except:
 					pass
 
-	return '''
-	<!DOCTYPE html>
-	<form action="" method="post" enctype="multipart/form-data">
-		<input type="file" name="file" multiple/>
-		<input type="submit" value="Upload">
-	</form>
-	'''
+	return render_template('upload.html')
 
 
 @app.route('/paadu')
@@ -74,6 +68,8 @@ def play():
 			art_name = song.strip('.mp3') + '.jpg'
 			if art_name in os.listdir(ALBUM_ART_FOLDER):
 				s['art'] = url_for('uploaded_art', filename=art_name)
+			else:
+				s['art'] = url_for('uploaded_art', filename='placeholder.jpg')
 			songs.append(s)
 		except:
 			pass
