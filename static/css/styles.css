@@ -55,3 +55,8 @@ input[type="submit"]:hover {
     background: transparent;
     opacity: 0.5;
 }
+
+.options.paadu {
+    text-align: center;
+    margin-left: 275px;
+}
