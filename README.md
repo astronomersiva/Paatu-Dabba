@@ -1,7 +1,7 @@
 # Paatu Dabba
 ### Spend more time listening.
 
-Paatu Dabba(பாட்டு டப்பா ) is Tamil for 'Song Box'. It aims to reduce time spent on copying songs between a group of people.
+Paatu Dabba(பாட்டு டப்பா ) is Tamil for 'Song Box'. It aims to reduce the time spent on copying songs among a group of people.
 
 The application has three parts:
 
