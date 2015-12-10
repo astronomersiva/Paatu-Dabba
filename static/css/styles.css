@@ -59,4 +59,5 @@ input[type="submit"]:hover {
 .options.paadu {
     text-align: center;
     margin-left: 275px;
+    position: fixed;
 }
