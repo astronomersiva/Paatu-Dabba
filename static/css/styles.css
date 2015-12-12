@@ -61,3 +61,10 @@ input[type="submit"]:hover {
     margin-left: 275px;
     position: fixed;
 }
+
+div#alert {
+    font-size: 20px;
+    width: 425px;
+    line-height: 0.5;
+    margin-top: 25px;
+}

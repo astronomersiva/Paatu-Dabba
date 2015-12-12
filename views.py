@@ -45,8 +45,10 @@ def upload_file():
 						output.write(audio_file.tag.images[0].image_data)
 				except:
 					pass
+				return render_template('upload.html', prog='1')
+		return render_template('upload.html', prog='-1')
 
-	return render_template('upload.html')
+	return render_template('upload.html', prog='0')
 
 
 @app.route('/paadu')

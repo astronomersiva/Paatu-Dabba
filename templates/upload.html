@@ -8,6 +8,26 @@
 		<link rel="stylesheet" type="text/css" href="static/css/styles.css">
 		<meta charset="utf-8">
 		<title>Paatu Dabba</title>
+		<script type="text/javascript">
+			window.onload = function() {
+				var status = {{ prog }};
+				var alertDiv = document.getElementById('alert');
+				switch (status) {
+					case -1:
+						alertDiv.className = 'center-block alert alert-danger';
+						alertDiv.innerHTML = 'Upload failed.';
+						break;
+					case 1:
+						alertDiv.className = 'center-block alert alert-success'; 
+						alertDiv.innerHTML = 'Upload successful.';
+						break;
+					case 0:
+						alertDiv.className = '';
+						alertDiv.innerHTML = '';
+						break;
+				}
+			}
+		</script>
 	</head> 
 
 	<body class="main-page">
@@ -20,6 +40,7 @@
 						<input type="file" name="file" multiple/>
 						<input type="submit" value="Upload">
 					</form>
+					<div id="alert" class="center-block" role="alert"></div>
 				</div>
 			</div>
 		</div>		
