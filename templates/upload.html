@@ -3,23 +3,25 @@
 
 	<head>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Paatu Dabba</title>
 		<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="static/css/styles.css">
-		<meta charset="utf-8">
-		<title>Paatu Dabba</title>
+		<script src="static/js/jquery.js"></script>
+		<script src="static/bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript">
 			window.onload = function() {
 				var status = {{ prog }};
 				var alertDiv = document.getElementById('alert');
 				switch (status) {
 					case -1:
-						alertDiv.className = 'center-block alert alert-danger';
-						alertDiv.innerHTML = 'Upload failed.';
+						alertDiv.className = 'center-block alert alert-danger alert-dismissible';
+						alertDiv.innerHTML = '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Upload failed.';
 						break;
 					case 1:
-						alertDiv.className = 'center-block alert alert-success'; 
-						alertDiv.innerHTML = 'Upload successful.';
+						alertDiv.className = 'center-block alert alert-success alert-dismissible'; 
+						alertDiv.innerHTML = '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Upload successful.';
 						break;
 					case 0:
 						alertDiv.className = '';
@@ -43,7 +45,7 @@
 					<div id="alert" class="center-block" role="alert"></div>
 				</div>
 			</div>
-		</div>		
+		</div>	
 	</body>
 
 </html>
